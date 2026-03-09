@@ -4,20 +4,20 @@
   // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
   "version": "0.2.0",
   "configurations": [
-    
     {
-      "type": "stlinkgdbtarget",
-      "request": "launch",
-      "name": "STM32Cube: STM32 Launch ST-Link GDB Server",
-      "origin": "snippet",
+      "name": "STM32 Debug (OpenOCD)",
       "cwd": "${workspaceFolder}",
-      "preBuild": "${command:st-stm32-ide-debug-launch.build}",
-      "runEntry": "main",
-      "imagesAndSymbols": [
-        {
-          "imageFileName": "${command:st-stm32-ide-debug-launch.get-projects-binary-from-context1}"
-        }
-      ]
+      "executable": "${workspaceFolder}/build/PRAC_STM32.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "openocd",
+      "configFiles": [
+          "interface/stlink.cfg",
+          "target/stm32h5x.cfg"
+      ],
+      "device": "STM32H563ZITX",
+      "showDevDebugOutput": "none"
     }
   ]
 }

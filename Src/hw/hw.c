@@ -1,6 +1,6 @@
 #include "hw.h"
 
-void hwInit(void);
+void hwInit(void)
 {
   bspInit(); 
 }

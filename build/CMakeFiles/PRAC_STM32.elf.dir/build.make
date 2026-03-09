@@ -76,98 +76,98 @@ CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj: CMakeFiles/PRAC_STM32.elf.dir/fla
 CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj: /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap/ap.c
 CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj: CMakeFiles/PRAC_STM32.elf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap/ap.c
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap/ap.c
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap/ap.c > CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.i
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap/ap.c > CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.i
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap/ap.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.s
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap/ap.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/ap/ap.c.s
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj: CMakeFiles/PRAC_STM32.elf.dir/flags.make
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj: /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/bsp.c
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj: CMakeFiles/PRAC_STM32.elf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/bsp.c
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/bsp.c
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/bsp.c > CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.i
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/bsp.c > CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.i
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/bsp.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.s
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/bsp.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/bsp.c.s
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.obj: CMakeFiles/PRAC_STM32.elf.dir/flags.make
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.obj: /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/startup/startup_stm32h563zitx.s
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building ASM object CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/startup/startup_stm32h563zitx.s
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/startup/startup_stm32h563zitx.s
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/startup/startup_stm32h563zitx.s > CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.i
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/startup/startup_stm32h563zitx.s > CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.i
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/startup/startup_stm32h563zitx.s -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.s
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/startup/startup_stm32h563zitx.s -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/startup/startup_stm32h563zitx.s.s
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj: CMakeFiles/PRAC_STM32.elf.dir/flags.make
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj: /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/syscalls.c
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj: CMakeFiles/PRAC_STM32.elf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/syscalls.c
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/syscalls.c
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/syscalls.c > CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.i
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/syscalls.c > CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.i
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/syscalls.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.s
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/syscalls.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/syscalls.c.s
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj: CMakeFiles/PRAC_STM32.elf.dir/flags.make
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj: /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/sysmem.c
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj: CMakeFiles/PRAC_STM32.elf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/sysmem.c
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/sysmem.c
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/sysmem.c > CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.i
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/sysmem.c > CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.i
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/sysmem.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.s
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp/sysmem.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/bsp/sysmem.c.s
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj: CMakeFiles/PRAC_STM32.elf.dir/flags.make
 CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj: /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw/hw.c
 CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj: CMakeFiles/PRAC_STM32.elf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw/hw.c
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw/hw.c
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw/hw.c > CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.i
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw/hw.c > CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.i
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw/hw.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.s
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw/hw.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/hw/hw.c.s
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj: CMakeFiles/PRAC_STM32.elf.dir/flags.make
 CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj: /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/main.c
 CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj: CMakeFiles/PRAC_STM32.elf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/main.c
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj -MF CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj.d -o CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.obj -c /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/main.c
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.i"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/main.c > CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.i
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/main.c > CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.i
 
 CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.s"
-	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/main.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.s
+	/Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/main.c -o CMakeFiles/PRAC_STM32.elf.dir/Src/main.c.s
 
 # Object files for target PRAC_STM32.elf
 PRAC_STM32_elf_OBJECTS = \

@@ -11,7 +11,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${C_FLAGS}")
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} ${C_FLAGS}")
 
 set(LINKER_SCRIPT "${CMAKE_SOURCE_DIR}/Src/bsp/ldscript/STM32H563ZITX_FLASH.ld")
-set(CMAKE_EXE_LINKER_FLAGS "-Wl,-Map=${PROJECT_NAME}.map,--cref -Wl,--gc-sections ${MCU} -T${LINKER_SCRIPT} --specs=nano.specs")
+set(CMAKE_EXE_LINKER_FLAGS "-Wl,-Map=${PROJECT_NAME}.map,--cref -Wl,--gc-sections ${MCU} -T${LINKER_SCRIPT}")
 
 include_directories(
   Inc
