@@ -1,3 +1,0 @@
-/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles/PRAC_STM32.elf.dir
-/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles/edit_cache.dir
-/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/build/CMakeFiles/rebuild_cache.dir
