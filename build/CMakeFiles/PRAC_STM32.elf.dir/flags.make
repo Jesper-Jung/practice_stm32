@@ -5,13 +5,13 @@
 # compile C with /Applications/ArmGNUToolchain/15.2.rel1/arm-none-eabi/bin/arm-none-eabi-gcc
 ASM_DEFINES = 
 
-ASM_INCLUDES = -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Inc -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/common -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/lib
+ASM_INCLUDES = -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Inc -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/common -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/lib
 
 ASM_FLAGS =  -mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -Wall -Wextra -g3 -O0 --specs=nano.specs
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Inc -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/common -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/lib
+C_INCLUDES = -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Inc -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/common -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/hw -I/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/lib
 
 C_FLAGS =  -mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16 -Wall -Wextra -g3 -O0 --specs=nano.specs
 

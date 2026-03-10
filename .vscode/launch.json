@@ -5,19 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "STM32 Debug (OpenOCD)",
+      "name": "STM32 Debug (External)",
       "cwd": "${workspaceFolder}",
       "executable": "${workspaceFolder}/build/PRAC_STM32.elf",
       "request": "launch",
       "type": "cortex-debug",
       "runToEntryPoint": "main",
-      "servertype": "openocd",
-      "configFiles": [
-          "interface/stlink.cfg",
-          "target/stm32h5x.cfg"
-      ],
-      "device": "STM32H563ZITX",
-      "showDevDebugOutput": "none"
+      "servertype": "external",
+      "gdbTarget": "localhost:3333",
+      "targetId": "stm32h563zitx",
+      "showDevDebugOutput": "raw"
     }
   ]
 }

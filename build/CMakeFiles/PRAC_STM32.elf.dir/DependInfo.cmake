@@ -15,6 +15,7 @@ set(CMAKE_ASM_COMPILER_ID "GNU")
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Inc"
+  "/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src"
   "/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/ap"
   "/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/bsp"
   "/Volumes/JesperWork/workspace/STM32_Work/prac_stm32/Src/common"

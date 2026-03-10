@@ -15,6 +15,7 @@ set(CMAKE_EXE_LINKER_FLAGS "-Wl,-Map=${PROJECT_NAME}.map,--cref -Wl,--gc-section
 
 include_directories(
   Inc
+  Src
   Src/ap
   Src/bsp
   Src/common
@@ -22,7 +23,15 @@ include_directories(
   Src/lib
 )
 
-file(GLOB_RECURSE SOURCES "Src/*.c" "Src/*.s")
+file(GLOB SOURCES 
+  "./Src/*.c" 
+  "./Src/ap/*.c" 
+  "./Src/bsp/*.c" 
+  "./Src/common/*.c" 
+  "./Src/hw/*.c" 
+  "./Src/bsp/startup/*.s"
+)
+
 message(STATUS "Found source files: ${SOURCES}")
 
 add_executable(${PROJECT_NAME}.elf ${SOURCES})
