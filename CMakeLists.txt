@@ -20,6 +20,7 @@ include_directories(
   Src/ap
   Src/bsp
   Src/common
+  Src/common/hw/include
   Src/hw
   Src/lib/${DRIVER_LIB_NAME}/Drivers/CMSIS/Device/ST/STM32H5xx/Include
   Src/lib/${DRIVER_LIB_NAME}/Drivers/CMSIS/Include
@@ -33,6 +34,7 @@ file(GLOB SOURCES
   "./Src/bsp/*.c" 
   "./Src/common/*.c" 
   "./Src/hw/*.c" 
+  "./Src/hw/driver/*.c" 
   "./Src/bsp/startup/*.s"
   "./Src/lib/${DRIVER_LIB_NAME}/Drivers/BSP/STM32H5xx_Nucleo/*.c"
   "./Src/lib/${DRIVER_LIB_NAME}/Drivers/STM32H5xx_HAL_Driver/Src/*.c"
