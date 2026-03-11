@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "STM32 Debug (External)",
+      "name": "STM32 Debug (External, h563)",
       "cwd": "${workspaceFolder}",
       "executable": "${workspaceFolder}/build/PRAC_STM32.elf",
       "request": "launch",
@@ -15,6 +15,18 @@
       "gdbTarget": "localhost:3333",
       "targetId": "stm32h563zitx",
       "showDevDebugOutput": "raw"
+    },
+    {
+      "name": "STM32 Debug (External, h503)",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/PRAC_STM32.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "external",
+      "gdbTarget": "localhost:3333",
+      "targetId": "stm32h503rbtx",
+      "showDevDebugOutput": "none"
     }
   ]
 }
