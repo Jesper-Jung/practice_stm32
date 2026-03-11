@@ -5,14 +5,14 @@ cmake_minimum_required(VERSION 3.16)
 project(PRAC_STM32 C CXX ASM)
 
 set(MCU "-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16")
-set(DRIVER_LIB_NAME "cube_h563")
-set(DEVICE_FAMILY_NAME "STM32H563xx")
+set(DRIVER_LIB_NAME "cube_h503")
+set(DEVICE_FAMILY_NAME "STM32H503xx")
 set(C_FLAGS "${MCU} -Wall -Wextra -g3 -O0 --specs=nano.specs")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${C_FLAGS}")
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} ${C_FLAGS}")
 
-set(LINKER_SCRIPT "${CMAKE_SOURCE_DIR}/Src/bsp/ldscript/STM32H563ZITX_FLASH.ld")
+set(LINKER_SCRIPT "${CMAKE_SOURCE_DIR}/Src/bsp/ldscript/STM32H503RBTX_FLASH.ld")
 set(CMAKE_EXE_LINKER_FLAGS "-Wl,-Map=${PROJECT_NAME}.map,--cref -Wl,--gc-sections ${MCU} -T${LINKER_SCRIPT}")
 
 include_directories(
@@ -29,15 +29,15 @@ include_directories(
 )
 
 file(GLOB SOURCES
-  "./Src/*.c" 
-  "./Src/ap/*.c" 
-  "./Src/bsp/*.c" 
-  "./Src/common/*.c" 
-  "./Src/hw/*.c" 
-  "./Src/hw/driver/*.c" 
-  "./Src/bsp/startup/*.s"
-  "./Src/lib/${DRIVER_LIB_NAME}/Drivers/BSP/STM32H5xx_Nucleo/*.c"
-  "./Src/lib/${DRIVER_LIB_NAME}/Drivers/STM32H5xx_HAL_Driver/Src/*.c"
+  "Src/*.c" 
+  "Src/ap/*.c" 
+  "Src/bsp/*.c" 
+  "Src/common/*.c" 
+  "Src/hw/*.c" 
+  "Src/hw/driver/*.c" 
+  "Src/bsp/startup/startup_stm32h503rbtx.s"
+  "Src/lib/${DRIVER_LIB_NAME}/Drivers/BSP/STM32H5xx_Nucleo/*.c"
+  "Src/lib/${DRIVER_LIB_NAME}/Drivers/STM32H5xx_HAL_Driver/Src/*.c"
 )
 message(STATUS "Found source files: ${SOURCES}")
 

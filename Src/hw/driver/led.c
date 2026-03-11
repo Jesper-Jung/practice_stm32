@@ -1,26 +1,32 @@
 #include "led.h"
 
-typedef struct
-{
-  GPIO_TypeDef *port;
-  uint16_t      pin;
-  GPIO_PinState on_state;
-  GPIO_PinState off_state;
-} led_info_t;
-
+#if defined(USE_NUCLEO_144)
 led_info_t led_table[LED_MAX_CH] =
-  {
-    {GPIOB, GPIO_PIN_0, GPIO_PIN_RESET, GPIO_PIN_SET},
-  };
+{
+  {GPIOB, GPIO_PIN_0, GPIO_PIN_RESET, GPIO_PIN_SET},
+};
+
+#elif defined(USE_NUCLEO_64)
+led_info_t led_table[LED_MAX_CH] =
+{
+  {GPIOA, GPIO_PIN_5, GPIO_PIN_RESET, GPIO_PIN_SET},
+};
+
+#endif
 
 bool ledInit(void)
 {
   bool ret = true;
 
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin : PB12 */
+  #if defined(USE_NUCLEO_144)
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+  #elif defined(USE_NUCLEO_64)
+  __HAL_RCC_GPIOA_CLK_ENABLE();
+  #endif
+
+  /*Configure GPIO pin : PA5 */
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

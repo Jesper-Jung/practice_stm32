@@ -1,5 +1,5 @@
 BUILD_DIR		= build
-TARGET_CHIP = stm32h563zitx
+TARGET_CHIP = stm32h503rbtx
 
 .PHONY: build
 
