@@ -1,2 +1,6 @@
+.cache
+.cproject
+.project
+
 build/*
 Src/lib/*
