@@ -3,8 +3,6 @@
 
 #include "stm32h5xx_hal.h"
 
-#define NUCLEO_H503RB
-
 #if defined(NUCLEO_H563ZI)
 #define USE_NUCLEO_144
 #define STM32H563xx
