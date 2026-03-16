@@ -5,3 +5,5 @@
 
 build/*
 Src/lib/*
+example/*
+.vscode/settings.json

@@ -5,13 +5,9 @@
 
 #if defined(NUCLEO_H563ZI)
 #define USE_NUCLEO_144
-#define STM32H563xx
-#define STM32H5
 
 #elif defined(NUCLEO_H503RB)
 #define USE_NUCLEO_64
-#define STM32H503xx
-#define STM32H5
 
 #endif
 

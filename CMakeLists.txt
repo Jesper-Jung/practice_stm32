@@ -3,23 +3,23 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(PRAC_STM32 C CXX ASM)
-option(NUCLEO_H563ZI "Enable to use H563ZI board" ON)
-option(NUCLEO_H503RB "Enable to use H503RB board" OFF)
+option(NUCLEO_H563ZI "Enable to use H563ZI board" OFF)
+option(NUCLEO_H503RB "Enable to use H503RB board" ON)
 
 if (NUCLEO_H563ZI)
-    set(DRIVER_LIB_NAME "cube_h563")
-    set(DEVICE_FAMILY_NAME "STM32H5")
-    set(DEVICE_BOARD_NAME "NUCLEO_H563ZI")
-    set(DEVICE_CHIP_NAME "STM32H563xx")
-    set(LINKER_FILE "STM32H563ZITX_FLASH.ld")
-    set(STARTUP_FILE "startup_stm32h563zitx.s")
-    else (NUCLEO_H503RB)
-    set(DRIVER_LIB_NAME "cube_h503")
-    set(DEVICE_FAMILY_NAME "STM32H5")
-    set(DEVICE_BOARD_NAME "NUCLEO_H503RB")
-    set(DEVICE_CHIP_NAME "STM32H503xx")
-    set(LINKER_FILE "STM32H503RBTX_FLASH.ld")
-    set(STARTUP_FILE "startup_stm32h503rbtx.s")
+  set(DRIVER_LIB_NAME "cube_h563")
+  set(DEVICE_FAMILY_NAME "STM32H5")
+  set(DEVICE_BOARD_NAME "NUCLEO_H563ZI")
+  set(DEVICE_CHIP_NAME "STM32H563xx")
+  set(LINKER_FILE "STM32H563ZITX_FLASH.ld")
+  set(STARTUP_FILE "startup_stm32h563zitx.s")
+elseif(NUCLEO_H503RB)
+  set(DRIVER_LIB_NAME "cube_h503")
+  set(DEVICE_FAMILY_NAME "STM32H5")
+  set(DEVICE_BOARD_NAME "NUCLEO_H503RB")
+  set(DEVICE_CHIP_NAME "STM32H503xx")
+  set(LINKER_FILE "STM32H503RBTX_FLASH.ld")
+  set(STARTUP_FILE "startup_stm32h503rbtx.s")
 endif()
 
 set(MCU "-mcpu=cortex-m33 -mthumb -mfloat-abi=hard -mfpu=fpv5-sp-d16")
@@ -27,8 +27,8 @@ set(C_FLAGS "${MCU} -Wall -Wextra -g3 -O0 --specs=nano.specs")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${C_FLAGS}")
 set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} ${C_FLAGS}")
-
-set(CMAKE_EXE_LINKER_FLAGS "-Wl,-Map=${PROJECT_NAME}.map,--cref -Wl,--gc-sections ${MCU} -T${LINKER_FILE}")
+set(LINKER_SCRIPT_PATH "${CMAKE_CURRENT_SOURCE_DIR}/Src/bsp/ldscript/${LINKER_FILE}")
+set(CMAKE_EXE_LINKER_FLAGS "-Wl,-Map=${PROJECT_NAME}.map,--cref -Wl,--gc-sections ${MCU} -T${LINKER_SCRIPT_PATH}")
 
 include_directories(
   Src
@@ -37,10 +37,10 @@ include_directories(
   Src/common
   Src/common/hw/include
   Src/hw
-  Src/lib/${LIB_NAME}/Drivers/CMSIS/Device/ST/${DEVICE_FAMILY_NAME}xx/Include
-  Src/lib/${LIB_NAME}/Drivers/CMSIS/Include
-  Src/lib/${LIB_NAME}/Drivers/BSP/${DEVICE_FAMILY_NAME}xx_Nucleo
-  Src/lib/${LIB_NAME}/Drivers/${DEVICE_FAMILY_NAME}xx_HAL_Driver/Inc
+  Src/lib/${DRIVER_LIB_NAME}/Drivers/CMSIS/Device/ST/${DEVICE_FAMILY_NAME}xx/Include
+  Src/lib/${DRIVER_LIB_NAME}/Drivers/CMSIS/Include
+  Src/lib/${DRIVER_LIB_NAME}/Drivers/BSP/${DEVICE_FAMILY_NAME}xx_Nucleo
+  Src/lib/${DRIVER_LIB_NAME}/Drivers/${DEVICE_FAMILY_NAME}xx_HAL_Driver/Inc
 )
 
 file(GLOB SOURCES
@@ -51,12 +51,12 @@ file(GLOB SOURCES
   "Src/hw/*.c" 
   "Src/hw/driver/*.c" 
   "Src/bsp/startup/${STARTUP_FILE}"
-  "Src/lib/${LIB_NAME}/Drivers/BSP/${DEVICE_FAMILY_NAME}xx_Nucleo/*.c"
-  "Src/lib/${LIB_NAME}/Drivers/${DEVICE_FAMILY_NAME}xx_HAL_Driver/Src/*.c"
+  "Src/lib/${DRIVER_LIB_NAME}/Drivers/BSP/${DEVICE_FAMILY_NAME}xx_Nucleo/*.c"
+  "Src/lib/${DRIVER_LIB_NAME}/Drivers/${DEVICE_FAMILY_NAME}xx_HAL_Driver/Src/*.c"
 )
 message(STATUS "Found source files: ${SOURCES}")
 
-add_definitions(-D${CHIP_NAME})
+add_definitions(-D${DEVICE_CHIP_NAME})
 
 add_executable(${PROJECT_NAME}.elf ${SOURCES})
 target_compile_definitions(${PROJECT_NAME}.elf PRIVATE ${DEVICE_BOARD_NAME})
