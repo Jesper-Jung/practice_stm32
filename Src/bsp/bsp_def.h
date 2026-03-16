@@ -1,8 +1,6 @@
 #ifndef STM32H5XX_NUCLEO_H_
 #define STM32H5XX_NUCLEO_H_
 
-#include "stm32h5xx_nucleo_conf.h"
-
 #if defined(NUCLEO_H563ZI)
 
 #define TRACE_CK_Pin GPIO_PIN_2
